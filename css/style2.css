@@ -1,0 +1,281 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+/* CSS Document */
+:root{
+	--main-color: #EA2027;
+	--gray: #707070;
+	--light:#fff;
+	--column-padding: 10px 10px;
+	--screen-color: #8EC3DEa9;
+	--dark : #000;
+	--transparent : rgb(0,0,0, 0.9);
+}
+
+.menu {
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.overlay-menu {
+	padding: 0;
+	margin: 0;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+
+.region-menu {
+    padding: 0;
+	margin: auto;
+}
+
+
+
+
+
+.menus {
+	text-align: center;
+}
+.menus:nth-last-child(1){
+	margin-bottom: 0;
+}
+
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+
+
+.lower{
+	background-color: var(--light);
+	height: 50%;
+}
+
+
+
+
+.inner-container {
+	margin: auto;
+	padding: 0;
+}
+
+
+.logo-row {
+	background-color: var(--dark);
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	height: 100%;
+    width: 100%;
+	background-color: var(--main-color);
+	background-image: url("../images/SVG/indonesia-map.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 33%;
+	z-index: 0;
+	
+}
+
+.upper {
+	height: 50%;
+}
+
+.site-logo {
+	height: 72px;
+	filter: drop-shadow(0px 0px 6px var(--gray));
+}
+
+.hero1 {
+	color: var(--gray);
+	margin: 0;
+	padding: 0;	
+	font-family: A1ゴシック B;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 13px;
+}
+
+.button {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    cursor : pointer;
+	font-family: A1ゴシック B; 
+}
+
+.scan-button {
+	margin: 15px 0;
+	filter: drop-shadow(0px 0px 4px var(--gray));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.logo-container {
+	top: 20%;
+	left: 50%;
+	margin: 0 0 0 -125px;
+}
+
+.button-font {
+	color: var(--gray);
+	font-size: 12px;
+	font-family: "A P-OTF A1ゴシック StdN B";
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	
+}
+
+
+
+
+
+.icons {
+	margin-bottom: 10px;
+	height: 32px;
+}
+
+
+
+
+.container-fluid {
+	max-width: 962px;
+}
+
+
+
+#help-modal-title {
+	color: var(--light);
+    font-size: 40px;
+	font-family: A1ゴシック B ;
+	font-weight: 800;
+	letter-spacing: 6px;
+}
+
+
+
+.modal-nav-content {
+	position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 100%;
+	height: auto;
+    pointer-events: auto;
+}
+
+.modal-backdrop{
+	opacity: 0.9 !important;
+}
+
+
+.modal-region-header {
+	border: none;
+	padding: 0 1rem 1rem 0;
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.transparent-close {
+	color: #fff;
+	opacity: 1;
+	float: left;
+	margin : -1rem -1rem -1rem auto;
+	background-color: transparent;
+	border: none;
+	text-shadow: 0 1px 2px #fff;
+}
+
+.modal-title {
+	font-family: A1ゴシック B ;
+}
+
+.help-image {
+	max-height: 300px;
+	
+	margin-bottom:30px;
+}
+
+.section {
+	margin-bottom: 40px;
+}
+
+.help-p {
+	font-size: 13px;
+}
+
+.modal-header {
+	background-color: var(--gray);
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 962px !important;
+    }
+}
+@media (max-width: 320px){
+	.modal-dialog{
+		max-width: 314px !important;
+		
+	}
+	.modal-body{
+		margin: 0;
+		padding: 0;
+	}
+	.section{
+		max-width: 314px;
+	}
+	.help-image, .help-p{
+		max-width: 280px;
+	}
+	#help-modal-title{
+		font-size: 25px;
+		letter-spacing: 3px;
+	}
+	
+}
+
+@media screen and (orientation: landscape) and (max-width: 896px) {
+	.hide-on-landscape{
+		display: none;
+	}
+}
+
+.help-content {
+	margin: 0 30px;
+}

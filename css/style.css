@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* CSS Document */
+:root {
+  --main-color: #EA2027;
+  --gray: #707070;
+  --transparent: rgba(0, 0, 0, .6);
+  --light: #ffffff;
+  --column-padding: 10px 10px;
+  --screen-color: #8EC3DEa9;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/Background/Tengah/borobudur.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 66% 0;
+  background-color: var(--screen-color);
+  background-blend-mode: screen;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 50px;
+  background-color: var(--gray);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  position: relative;
+  margin-top: 10%;
+}
+
+.page-font-color {
+  color: var(--light);
+}
+.handwriting-name {
+  display: inline;
+  color: var(--light);
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 31px;
+  text-shadow: 0 0 3px var(--main-color);
+
+}
+
+
+
+.handwriting-name span {
+  font-size: 40px;
+}
+
+
+.text-block {
+  position: relative;
+  top: -30px;
+  left: 0;
+  padding: 10px;
+  background-color: var(--transparent);
+  box-shadow: 0 0 5px 1px;
+  z-index: 10;
+}
+
+
+#hero {
+  background-image: url("../images/Character/Tengah/diponegoro-phone-cropped.png");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-name {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: A1ゴシック B;
+}
+
+.types {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.icon {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.type-symbol {
+  font-size: 12px;
+  font-family: A1ゴシック M;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.zoom-button {
+  bottom: 0;
+  left: 0;
+  max-height: 28px;
+}
+
+.zoom-icon {
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+}
+
+.heroes-box {
+  max-height: 100px;
+  width: auto;
+}
+
+#city-name {
+  color: var(--light);
+  font-family: A1ゴシック B;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#description-text {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+#subtext {
+  font-family: A1ゴシック B;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.type-list {
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+
+.button-font {
+  color: var(--light);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  font-family: A1ゴシック B;
+}
+
+#scan-button-img {
+  position: fixed;
+  bottom: 32px;
+  left: calc(50% - 32px);
+}
+
+.icons {
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.icons-large {
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+#heroes-select-container {
+  bottom: 0;
+  left: 0;
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9164040616246498) 55%, rgba(255,255,255,0.6026785714285714) 75%, rgba(255,255,255,0.3925945378151261) 88%, rgba(255,255,255,0.17970938375350143) 94%, rgba(255,255,255,0) 100%);
+}
+
+.center-contents {
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 114px);
+  width: 100%;
+  position: relative;
+}
+
+main {
+  height: 100%;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+  color: #fff;
+  background-color: #009688;
+  padding: 0.01em 16px;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  background-color: var(--gray);
+}
+
+#scan-button {
+  bottom: 10px;
+}

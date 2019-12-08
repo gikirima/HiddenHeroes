@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heroes of Indonesia</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  <!-- Adobe Font-->
+  <link rel="stylesheet" href="https://use.typekit.net/vwy2wht.css">
+
+  <!--Morisawa Font-->
+  <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?IU~Zr-XD6eA%3D" charset="utf-8"></script>
+
+  <!--style css-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- body code goes here -->
+  <main>
+
+    <!--Place Name-->
+    <header id="header" class="d-flex w-100 justify-content-center align-items-center">
+      <p style="margin: 0;
+	letter-spacing : 0.15em;" id="city-name" class="text-center">ジョグジャカルタ</p>
+    </header>
+
+    <div id="hero" class="center-contents">
+
+      <!--Main content-->
+
+      <div class="container p-0">
+        <div class="row no-gutters px-4">
+
+          <!--zoom icon-->
+          <div class="col-6 position-relative">
+            <object class="zoom-icon position-absolute" type="image/svg+xml" data="images/SVG/zoom-icon.svg">
+              あなたのブラウザーはSVGをサポートしていません。
+            </object>
+          </div>
+
+          <!-- Hero's Description -->
+          <div class="description col-6">
+            <h1 class="handwriting-name"><span>D</span>iponegoro</h1>
+            <div class="text-block rounded-lg">
+              <h2 id="hero-name" class="page-font-color">ディポネゴロ</h2>
+              <div class="page-font-color types">
+                <div class="d-flex justify-content-between mb-2"><span class="type-list">武器名：<strong>クリス</strong></span><img class="icon" src="images/SVG/sword-icon.svg" alt="weapon-icon">
+                  <h3 class="type-symbol"> 剣</h3>
+                </div>
+                <div class="d-flex justify-content-between"><span class="type-list">タイプ：</span> <img class="icon" src="images/SVG/balance-icon.svg" alt="type-icon">
+                  <h3 class="type-symbol">バランス</h3>
+                </div>
+              </div>
+              <p id="description-text" class="page-font-color m-0 p-0">ディポネゴロは旧ジョグジャカルタ国の王子であり、インドネシア史上最大の戦争であるジャワ戦争の指導者。
+                かつてない大きな戦いで両者共に甚大な被害を出していた。その影響でジョグジャカルタの民は半分まで減っていたといわれている。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--Heroes Select Menu-->
+
+      <div id="heroes-select-container" class="container-fluid p-0 mt-3 position-absolute">
+        <div class="row px-4 pb-2">
+          <p id="subtext" class="col-12">この地に潜む英雄たち</p>
+        </div>
+        <div class="row px-4 pb-5">
+          <div class="col pl-0 heroes-box"><img class="rounded thumbnail" src="images/Thumbnail/Character/Center Indonesia/fatahillah.png" alt="hero1"></div>
+          <div class="col heroes-box"><img class="rounded thumbnail" src="images/Thumbnail/Character/Center Indonesia/kebo-iwa.png" alt="hero2"></div>
+          <div class="col heroes-box"><img class="rounded thumbnail" src="images/Thumbnail/Character/Center Indonesia/apang-semangai.png" alt="hero3"></div>
+          <div class="col pr-0 heroes-box"><img class="rounded thumbnail" src="images/Thumbnail/Character/Center Indonesia/tumenggung-surapati.png" alt="hero4"></div>
+        </div>
+      </div>
+
+    </div>
+    <!--center-contents div ends-->
+
+    <!--Bottom Footer-->
+    <div id="footer" class="container-fluid align-self-center">
+      <div class="row text-center">
+        <div class="col-3 pl-0">
+          <div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font d-flex flex-column justify-content-center"> <object id="region-icon" class="icons" data="images/SVG/region-icon-white.svg" type="image/svg+xml"></object>
+            <span class="button-font">REGION</span>
+          </div>
+        </div>
+
+        <div class="col-6 d-flex justify-content-center">
+          <div data-toggle="modal" data-target="#help-modal" id="scan-button" class="button-font d-flex flex-column justify-content-center position-fixed"> <object id="scan-icon" class="icons-large" data="images/SVG/scan-icon.svg" type="image/svg+xml"></object>
+            <span class="button-font">FIND MORE!</span>
+          </div>
+        </div>
+
+        <div class="col-3 pr-0">
+          <div data-toggle="modal" data-target="#help-modal" id="local-button" class="button-font d-flex flex-column justify-content-center"> <object id="info-icon" class="icons" data="images/SVG/info-icon.svg" type="image/svg+xml"></object>
+            <span class="button-font">LOCAL INFO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bottom Menu Ends-->
+
+  </main>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"> 
+          <!-- gradient of zoom icon-->
+          <defs>
+            <radialGradient id="zoom-gradient">
+              <stop offset="50%" stop-color="#1289A7" />
+              <stop offset="100%" stop-color="#0C5668" />
+            </radialGradient>
+          </defs>
+          <title>zoom-icon</title>
+          <g id="b132ae26-d593-42eb-b26e-a644570268b7" data-name="レイヤー 2">
+            <g id="a6ce6877-07a3-4923-bc33-7f2f8b8615f5" data-name="レイヤー 1">
+              <circle cx="14" cy="14" r="14" fill="url('#zoom-gradient')"/>
+              <path d="M17.55 13H14V9.45a.5.5.0 0 0-1 0V13H9.45a.5.5.0 0 0 0 1H13v3.55a.5.5.0 0 0 1 0V14h3.55a.5.5.0 0 0 0-1z" fill="#fff"/>
+              <path d="M21.71 20.29 19.46 18A7.52 7.52.0 1 0 18 19.46l2.25 2.25a1 1 0 0 0 1.42-1.42zM7 13.5A6.5 6.5.0 1 1 13.5 20 6.51 6.51.0 0 1 7 13.5z" fill="#fff"/>
+            </g>
+          </g>
+        </svg>
