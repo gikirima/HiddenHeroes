@@ -16,7 +16,7 @@
     pointer-events: auto;
 }
 
-.container-fluid {
+.menu-container {
 	max-width: 962px;
 }
 
@@ -71,7 +71,7 @@
 
 .help-image {
 	max-height: 300px;
-	
+
 	margin-bottom:30px;
 }
 
@@ -84,11 +84,6 @@
 }
 
 
-@media screen and (orientation: landscape) and (max-width: 896px) {
-	.hide-on-landscape{
-		display: none;
-	}
-}
 
 .help-content {
 	margin: 0 30px;
@@ -126,7 +121,7 @@
 @media (max-width: 320px){
 	.modal-dialog{
 		max-width: 314px !important;
-		
+
 	}
 	.modal-body{
 		margin: 0;
@@ -142,5 +137,5 @@
 		font-size: 25px;
 		letter-spacing: 3px;
 	}
-	
+
 }

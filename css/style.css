@@ -24,7 +24,7 @@ html, body {
   background-position: 66% 0;
   background-color: var(--screen-color);
   background-blend-mode: screen;
-  overflow: hidden;
+  font-size: 16px;
 }
 
 p {
@@ -84,6 +84,7 @@ main {
 .zoom-icon {
 	bottom: 0;
 	left: 0;
+  height: 32px;
   cursor: pointer;
 }
 
@@ -108,7 +109,7 @@ main {
   font-family: adobe-handwriting-ernie, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.81em;
+  font-size: 1.813em;
   text-shadow: 0 0 3px var(--main-color);
 	letter-spacing: -1.05px;
 
@@ -117,9 +118,9 @@ main {
 
 
 .handwriting-name span {
-  font-size: 2.38em;
+  font-size: 2.375em;
 	letter-spacing: -1.05px;
-  
+
 }
 
 
@@ -134,7 +135,7 @@ main {
 }
 
 #hero-name {
-  font-size: 0.88em;
+  font-size: 0.875em;
   font-weight: 800;
   font-family: A1ゴシック B;
  letter-spacing: -0.56px;
@@ -171,13 +172,13 @@ main {
 }
 
 .type-symbol {
-  font-size: 0.63em;
+  font-size: 0.625em;
   font-family: A1ゴシック M;
 	font-weight: 800;
 }
 
 #description-text {
-  font-size: 0.63em;
+  font-size: 0.625em;
   letter-spacing: 0;
   line-height: 20px;
 	font-family: "A P-OTF A1ゴシック StdN L";
@@ -196,7 +197,7 @@ main {
   bottom: 0;
   left: 0;
   background: rgb(255,255,255);
-background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF98 9%, #FFFFFFCB 13%, #FFFFFFEA 37%, #FFFFFF 100%);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 83%, rgba(255,255,255,0.8631827731092436) 90%, rgba(255,255,255,0.6951155462184874) 93%, rgba(255,255,255,0.2805497198879552) 96%, rgba(255,255,255,0) 100%);
 }
 
 .heroes-box {
@@ -212,6 +213,21 @@ background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF98 9%, #FFF
   object-position: 50% 30%;
   border-radius: 5px;
 }
+.region-backtext{
+	position: relative;
+	z-index: 2;
+}
+
+.region-backtext::after{
+	content: "Central Indonesia";
+	position: absolute;
+	font-family: "Adobe Handwriting Ernie", sans-serif;
+	font-size: 2em;
+	color: #D7DAD9;
+	letter-spacing: -1.05px;
+	bottom : 10px;
+	z-index: -1;
+}
 
 #footer {
   position: fixed;
@@ -219,29 +235,31 @@ background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF98 9%, #FFF
   bottom: 0;
   height: 64px;
   width: 100%;
-  color: var(--light);
-  padding: 0.01em 16px;
   background-color: var(--gray);
-font-family: "A P-OTF A1ゴシック StdN B"
+	z-index: 10;
 }
+
 
 .button-font {
   color: var(--light);
-  font-size: 0.63em;
+  font-size: 0.625em;
   font-weight: bold;
   letter-spacing: 0.5px;
-  cursor: pointer;
-  font-family: A1ゴシック B;
+  padding : 0;
+  margin: 0;
+  cursor : pointer;
 }
 
 .icons {
   height: 32px;
   margin-bottom: 5px;
+  cursor: pointer
 }
 
 .icons-large {
   height: 64px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #scan-button {
@@ -254,32 +272,47 @@ font-family: "A P-OTF A1ゴシック StdN B"
   left: calc(50% - 32px);
 }
 
-
 /*Media Queries*/
 
 
 /*small phones*/
 @media (max-width:320px) {
-	
+
 	#header{
 		position: fixed;
 		margin-top: -50px;
 		z-index: 10000;
 	}
-	
+
 	#hero{
-		
 		background-position: 30%;
 	}
-	
+
 	.zoom-icon{
 		display: none;
 	}
+
 	.center-contents{
 		height: auto;
 		margin-top: 50px;
 	}
-	
+
+.handwriting-name{
+  font-size: 1.5em;
+}
+
+.handwriting-name span{
+  font-size : 2em;
+}
+
+
+  .type-list{
+    font-size: 0.625em;
+    letter-spacing: -0.48px;
+  }
+
+
+
 	#heroes-select-container .row:nth-child(2){
 		margin-bottom: 64px;
 	}
@@ -287,18 +320,55 @@ font-family: "A P-OTF A1ゴシック StdN B"
 
 /*standard Mobile phones*/
 
-@media (min-width: 321px) and (max-width:414px) {
+@media (min-width: 321px) and (max-width:767px) {
 	.description{
 		margin-top: 10%;
-	}
-	#hero{
 	}
 }
 
 .zoom-container {
-	
+
 	left: 0;
 	bottom: 0;
 }
 
+/*tablet & desktop*/
+@media (min-width: 768px) {
+  .description{
+    margin-top: 10%;
+  }
+  #hero{
+    background-image: url("../images/Character/Tengah/diponegoro-tablet.png");
+      background-size: contain;
+      background-position: 10%;
+  }
 
+	#hero-name{
+		font-size : 1.5em;
+    line-height: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+	}
+
+  .type-list{
+    font-size : 1em;
+    line-height: 1.5;
+  }
+  .types{
+
+    margin-bottom: 20px;
+  }
+
+  #description-text{
+    font-size : 0.75em;
+    line-height: 2;
+
+  }
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 896px) {
+	.hide-on-landscape{
+		display: none;
+	}
+}

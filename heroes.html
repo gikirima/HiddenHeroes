@@ -14,52 +14,17 @@
   <!--Morisawa Font-->
   <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?IU~Zr-XD6eA%3D" charset="utf-8"></script>
 
+
   <!--style css-->
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	
-	<!-- overlay STARTS-->
-    <div class="modal fade" id="region-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-			<div class="modal-nav-content">
 
-				<div class="modal-region-header">
-					<button type="button" class="transparent-close" data-dismiss="modal">
-						<span aria-hidden="true">&times;</span></button>
-				</div>
-				<div class="modal-body">
 
-					<div class="container-fluid">
-						<div class="row region-menu">
-							<div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-								  <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/PNG/west.png" alt="west"></a>
-							</div>
-							  	<div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-								 	<a href="heroes.html"><img class="img-fluid overlay-menu" src="images/PNG/center.png" alt="center"></a>
-								</div>
 
-								<div class="col-xs-12 col-md-12 col-lg-4 menus">
-									<a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/PNG/east.png" alt="east"></a>
-								</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-    </div>
-   <!-- overlay ENDS-->
-	
-	
-	
-	
-	
-	
   <!-- body code goes here -->
-  <main>
+  <main class="hide-on-landscape">
 
     <!--Place Name-->
     <header id="header" class="d-flex w-100 justify-content-center align-items-center">
@@ -75,28 +40,30 @@
 
           <!--zoom icon-->
           <div class="col-6 position-relative h-100">
-			  
+
             <object class="zoom-icon position-absolute" type="image/svg+xml" data="images/SVG/zoom-icon.svg">
               あなたのブラウザーはSVGに対応していません。最新バージョンにアップデートするか、別のブラウザーをご利用ください。
             </object>
-			 
+
           </div>
+
+
 
           <!-- Hero's Description -->
           <div class="description col-6">
-			  
-			  
+
+
             <h1 class="handwriting-name"><span>D</span>iponegoro</h1>
-			  
-			  
+
+
             <div class="text-block rounded-lg">
               <h2 id="hero-name" class="page-font-color">ディポネゴロ</h2>
 				<!--types container box-->
               <div class="page-font-color types">
                 <div class="d-flex justify-content-between mb-2"><span class="type-list">武器名：<strong>クリス</strong></span>
-					
+
 					<div class="weapon-type-container d-flex justify-content-center align-items-center">
-						<object class="icon" data="images/SVG/sword-icon.svg" type="image/svg+xml"></object> 
+						<object class="icon" data="images/SVG/sword-icon.svg" type="image/svg+xml"></object>
                   <h3 class="type-symbol my-auto mx-1"> 剣</h3></div>
                 </div>
                 <div class="d-flex justify-content-between"><span class="type-list">タイプ：</span>
@@ -105,28 +72,28 @@
                   <h3 class="type-symbol my-auto mx-1">バランス</h3></div>
                 </div>
               </div>
-				
+
               <p id="description-text" class="page-font-color m-0 p-0">旧ジョグジャカルタ国の王子であり、インドネシア史上最大の戦争であるジャワ戦争の指導者。 嘗てない大きな戦いで両者共に甚大な被害を出していた。その影響でジョグジャカルタの民は半分まで減っていたと言われている。</p>
             </div>
           </div>
 
         </div>
       </div>
- 
+
       <!--Heroes Select Menu-->
 
-      <div id="heroes-select-container" class="container-fluid p-0 mt-3">
+      <div id="heroes-select-container" class="container-fluid mt-3">
         <div class="row px-4 py-2 my-2">
           <p id="subtext" class="col-12">この地に潜む英雄たち</p>
         </div>
 		  <!-- select box -->
-        <div class="row px-4 pb-5">
+        <div class="row px-4 pb-5 region-backtext">
           <div class="col pl-0 heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/fatahillah.png" alt="hero1"></div>
           <div class="col heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/kebo-iwa.png" alt="hero2"></div>
           <div class="col heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/apang-semangai.png" alt="hero3"></div>
           <div class="col pr-0 heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/tumenggung-surapati.png" alt="hero4"></div>
         </div>
-		  
+
       </div>
 		<!-- Heroes Select Menu ENDS -->
 
@@ -135,45 +102,45 @@
 
     <!--Bottom Footer-->
     <div id="footer" class="container-fluid">
-      <div class="row text-center h-100">
-		  
+      <div class="row text-center h-100 justify-content-around">
+
 		  <!-- REGION BUTTON -->
-        <div class="col-3 p-0 my-auto">
-          <div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font d-flex flex-column justify-content-center button">
+        <div class="col-auto my-auto">
+          <div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font d-flex flex-column text-center">
 			  <object id="region-icon" class="icons" data="images/SVG/region-icon-white.svg" type="image/svg+xml"></object>
-            <span class="button-font">REGION</span>
+            <span>REGION</span>
           </div>
         </div>
 
 		  <!-- FIND MORE BUTTON -->
-        <div class="col-6 d-flex justify-content-center my-auto">
-          <div data-toggle="modal" data-target="#help-modal" id="scan-button" class="button-font d-flex flex-column justify-content-center position-fixed button"> 
+        <div class="col-auto d-flex justify-content-center my-auto">
+          <div data-toggle="modal" data-target="#help-modal" id="scan-button" class="text-center d-flex flex-column button-font position-fixed">
 			  <object id="scan-icon" class="icons-large" data="images/SVG/scan-icon.svg" type="image/svg+xml"></object>
-            <span class="button-font">FIND MORE!</span>
+            <span>FIND MORE!</span>
           </div>
         </div>
 
 		  <!-- LOCAL INFO BUTTON -->
-        <div class="col-3 p-0 my-auto">
-          <div data-toggle="modal" data-target="#help-modal" id="local-button" class="button-font d-flex flex-column justify-content-center button"> 
+        <div class="col-auto p-0 my-auto">
+          <div data-toggle="modal" data-target="#help-modal" id="local-button" class="text-center d-flex flex-column button-font">
 			  <object id="info-icon" class="icons" data="images/SVG/info-icon.svg" type="image/svg+xml"></object>
-            <span class="button-font">LOCAL INFO</span>
+            <span">LOCAL INFO</span>
           </div>
         </div>
-		  
-      </div>
     </div>
     <!--Bottom Footer Ends-->
 
   </main>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <!--jquery js-->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!--bootstrap theme-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.3.1.js"></script>
-	
 <!-- js style script-->
 <script type="text/javascript" src="js/script.js"></script>
 </body>
