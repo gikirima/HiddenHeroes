@@ -14,6 +14,7 @@
 
 <!--Stylesheet-->
 <link href="css/style2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/modal-style.css">
 
 </head>
 
@@ -73,17 +74,17 @@
     <div class="help-content">
 
       <div class="section d-flex flex-column align-items-center">
-        <img class="help-image img-fluid" src="images/SVG/help1.SVG" alt="help1">
+        <object class="help-image img-fluid" type="image/svg+xml" data="images/SVG/help1.SVG"></object>
         <p class="help-p">壁のどこかに隠されたQRコードを見つけて、読み込むと...</p>
       </div>
 
       <div class="section d-flex flex-column align-items-center">
-        <img class="help-image img-fluid" src="images/SVG/help2.SVG" alt="help2">
+        <object class="help-image img-fluid" type="image/svg+xml" data="images/SVG/help2.SVG"></object>
         <p class="help-p">その地に存在する英雄や、その地についての簡単な情報が手に入れられる。</p>
       </div>
 
       <div class="section d-flex flex-column align-items-center">
-        <img class="help-image img-fluid" src="images/SVG/help3.SVG" alt="help3">
+        <object class="help-image img-fluid" type="image/svg+xml" data="images/SVG/help3.SVG"></object>
         <p class="help-p">同じ地方の英雄をコンプリートするといいことがある。</p>
       </div>
 
@@ -123,15 +124,15 @@
 			<!--bottom menu-->
 			<div class="row justify-content-around">
 				<div class="col-auto">
-					<div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font text-center">
-						<img id="region-icon" class="icons" src="images/SVG/region-icon-gray.svg" alt="region-icon-gray"><p class="button">REGION</p>
+					<div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font text-center button">
+						<img id="region-icon" class="icons" src="images/SVG/region-icon-gray.svg" alt="region-icon-gray"><p>REGION</p>
 					</div>
 					</div>
 
 				<div class="col-auto">
-					<div data-toggle="modal" data-target="#help-modal" id="how-to-button" class="button-font text-center">
+					<div data-toggle="modal" data-target="#help-modal" id="how-to-button" class="button-font text-center button">
 						<img id="help-icon" class="icons" src="images/SVG/help-icon-gray.svg" alt="help-icon">
-						<p class="button">HOW TO</p>
+						<p>HOW TO</p>
 					</div>
 				</div>
 			</div>
