@@ -85,6 +85,7 @@ main {
 
 
 #city-name::after{
+  display: block;
 	position: absolute;
 	content: "Yogyakarta";
 	font-family: "Adobe Handwriting Ernie", sans-serif;
@@ -271,6 +272,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 83
 }
 
 .region-backtext::after{
+  display: block;
 	content: "Central Indonesia";
 	position: absolute;
 	font-family: "Adobe Handwriting Ernie", sans-serif;
@@ -298,7 +300,6 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 83
   color: var(--light);
   font-size: 0.625em;
   font-weight: bold;
-  letter-spacing: 0.5px;
   padding : 0;
   margin: 0;
   cursor : pointer;
@@ -315,7 +316,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 83
 
 .icons-large {
   height: 64px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   cursor: pointer;
 
 }
