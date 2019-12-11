@@ -8,10 +8,15 @@
   --transparent: rgba(0, 0, 0, .6);
   --light: #ffffff;
   --column-padding: 10px 10px;
-  --screen-color: #8EC3DEa9;
+  --screen-color: #8EC3DECC;
   --yellow: #FFC312;
   --orange: #F79F1F;
+  --blue: #0652DD;
   --dark: #000;
+}
+
+#wrap{
+  height: 100%;
 }
 
 html, body {
@@ -86,6 +91,7 @@ main {
   letter-spacing: -1.05px;
   top: 15px;
   left: calc(50% - 63px);
+  z-index: -1;
 }
 
 .center-contents {
@@ -267,6 +273,7 @@ main {
 .button-font {
   color: var(--light);
   font-size: 0.625em;
+  font-family: A1ゴシック B;
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -404,4 +411,5 @@ main {
   .hide-on-landscape {
     display: none;
   }
+
 }

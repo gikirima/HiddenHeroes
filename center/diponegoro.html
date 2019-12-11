@@ -18,14 +18,31 @@
   <!--style css-->
   <link href="css/style2.css" rel="stylesheet" type="text/css">
   <!-- animation css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- loader css -->
+  <link rel="stylesheet" href="css/loader.css">
   <!-- page style css -->
   <link rel="stylesheet" href="css/modal-style.css" type="text/css">
-
 
 </head>
 
 <body class="bg-1">
+
+  <!-- loader STARTS -->
+  <div id="loader" class="loader">
+    <div class="sk-grid sk-center">
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+    </div>
+  </div>
+  <!-- loader ENDS -->
 
   <!-- overlay STARTS-->
   <div class="modal fade" id="region-modal" tabindex="-1" role="dialog">
@@ -41,14 +58,14 @@
           <div class="container-fluid menu-container">
             <div class="row region-menu">
               <div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-                <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/PNG/west.png" alt="west"></a>
+                <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/west.png" alt="west"></a>
               </div>
               <div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-                <a href="heroes.html"><img class="img-fluid overlay-menu" src="images/PNG/center.png" alt="center"></a>
+                <a href="heroes.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/center.png" alt="center"></a>
               </div>
 
               <div class="col-xs-12 col-md-12 col-lg-4 menus">
-                <a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/PNG/east.png" alt="east"></a>
+                <a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/east.png" alt="east"></a>
               </div>
             </div>
           </div>
@@ -83,26 +100,26 @@
 
 
   <!-- body starts here -->
-  <main class="hide-on-landscape animated fadeInUp">
+  <main class="hide-on-landscape">
 
     <!--Place Name Header-->
-    <header id="header" class="d-flex w-100 justify-content-center align-items-center animated slideInUp delay-1">
-      <span id="city-name" class="text-center m-0 animated fadeInUp delay-2">ジョグジャカルタ</span>
+    <header id="header" class="d-flex w-100 justify-content-center align-items-center animated fadeInUp delay-1 fast">
+      <span id="city-name" class="text-center m-0 animated fadeInUp delay-2 fast">ジョグジャカルタ</span>
     </header>
     <!--Place Name Header ENDS-->
 
 
-    <div id="hero" class="heroInfo hero-img center-contents d-flex flex-column justify-content-between animated slideInUp delay-1">
+    <div id="hero" class="heroInfo hero-img center-contents d-flex flex-column justify-content-between animated fadeIn delay-2 fast">
 
 
       <!--Main content STARTS-->
 
       <!-- hero content STARTS -->
-      <div id="hero-info" class="container p-0 h-100 animated fadeInUp delay-1 fast">
-        <div class="row no-gutters px-4 h-100 animated fadeInUp delay-1">
+      <div id="hero-info" class="container p-0">
+        <div class="row no-gutters px-4">
 
           <!--zoom icon container STARTS-->
-          <div class="col-6 zoom-col align-items-end animated fadeInUp delay-1">
+          <div class="col-6 zoom-col align-items-end animated fadeInUp delay-1 fast">
             <!-- zoom button STARTS-->
             <svg data-toggle="modal" data-target="#hero-img-modal" role="button" id="zoom-icon" class="zoom-icon" style="cursor:pointer;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
               <defs>
@@ -132,23 +149,24 @@
           <!-- zoom icon container ENDS -->
 
           <!-- Hero's Description -->
-          <div class="description col-6 animated fadeInUp">
+          <div class="description col-6 animated fadeInUp delay-2 fast">
             <!-- handwriting -->
             <h1 id="handwriting-name">Diponegoro</h1>
 
             <!-- text block -->
             <div class="text-block rounded-lg">
-              <h2 id="hero-name" class="page-font-color animated fadeInUp delay-1">ディポネゴロ</h2>
+              <h2 id="hero-name" class="page-font-color animated fadeInUp delay-1s fast">ディポネゴロ</h2>
+
               <!--types container box-->
               <div class="page-font-color types">
-                <div class="d-flex justify-content-between mb-2 animated fadeInUp delay-1s"><span class="type-list">武器名：<strong>クリス</strong></span>
+                <div class="d-flex justify-content-between mb-2 animated fadeInUp delay-3 fast"><span class="type-list">武器名：<strong>クリス</strong></span>
 
                   <div class="weapon-type-container d-flex justify-content-center align-items-center">
                     <object class="icon" data="images/SVG/sword-icon.svg" type="image/svg+xml"></object>
                     <h3 class="type-symbol my-auto mx-1"> 剣</h3>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between animated fadeInUp delay-3"><span class="type-list">タイプ：</span>
+                <div class="d-flex justify-content-between animated fadeInUp delay-4 fast"><span class="type-list">タイプ：</span>
                   <div style="background-color: var(--orange);" class="type-container d-flex">
                     <object class="icon" data="images/SVG/balance-icon.svg" type="image/svg+xml"></object>
                     <h3 class="type-symbol my-auto mx-1">バランス</h3>
@@ -156,8 +174,9 @@
                 </div>
               </div>
               <!--types container box ENDS-->
+
               <!-- text description -->
-              <p id="description-text" class="page-font-color m-0 p-0 animated fadeInUp delay-4">
+              <p id="description-text" class="page-font-color m-0 p-0 animated fadeInUp delay-5 fast">
                 旧ジョグジャカルタ国の王子であり、インドネシア史上最大の戦争であるジャワ戦争の指導者。
                 嘗てない大きな戦いで両者共に甚大な被害を出していた。その影響でジョグジャカルタの民は半分まで減っていたと言われている。</p>
             </div>
@@ -168,8 +187,8 @@
       <!-- hero content ENDS -->
 
       <!-- local content STARTS -->
-      <div style="display: none;" id="local-info" class="container p-0 h-100 animated fast">
-        <div class="row no-gutters px-4 h-100">
+      <div style="display: none;" id="local-info" class="container p-0 animated fast">
+        <div class="row no-gutters px-4">
           <!-- Hero's Description -->
           <div class="description col-6">
             <!-- handwriting -->
@@ -195,16 +214,16 @@
 
       <!--Heroes Select Menu-->
 
-      <div id="heroes-select-container" class="container-fluid mt-3 animated slideInUp delay-1s">
+      <div id="heroes-select-container" class="container-fluid mt-3">
         <div class="row px-4 py-2 my-2">
-          <p id="subtext" class="col-12">この地に潜む英雄たち</p>
+          <p id="subtext" class="col-12 animated fadeInUp delay-1 fast">この地に潜む英雄たち</p>
         </div>
         <!-- select box -->
-        <div class="row px-4 pb-5 region-backtext">
-          <div class="col pl-0 heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/fatahillah.png" alt="hero1"></div>
-          <div class="col heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/kebo-iwa.png" alt="hero2"></div>
-          <div class="col heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/apang-semangai.png" alt="hero3"></div>
-          <div class="col pr-0 heroes-box"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/tumenggung-surapati.png" alt="hero4"></div>
+        <div class="row px-4 pb-5 region-backtext animated fadeInUp delay-2 fast">
+          <div class="col pl-0 heroes-box animated fadeInUp delay-1s fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/fatahillah.png" alt="hero1"></div>
+          <div class="col heroes-box animated fadeInUp delay-3 fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/kebo-iwa.png" alt="hero2"></div>
+          <div class="col heroes-box animated fadeInUp delay-4 fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/apang-semangai.png" alt="hero3"></div>
+          <div class="col pr-0 heroes-box animated fadeInUp delay-5 fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/tumenggung-surapati.png" alt="hero4"></div>
         </div>
 
       </div>
@@ -214,36 +233,37 @@
     <!--center-contents div ends-->
 
     <!--Bottom Footer-->
-    <div id="footer" class="container-fluid">
+    <div id="footer" class="container-fluid  animated fadeInUp delay-1 fast">
       <div class="row text-center h-100 justify-content-around">
 
         <!-- REGION BUTTON -->
         <div class="col-auto my-auto">
           <div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font d-flex flex-column text-center">
-            <img id="region-icon" class="icons" src="images/SVG/region-icon-white.svg" alt="region-icon">
-            <span>REGION</span>
+            <img id="region-icon" class="icons animated fadeInUp delay-3 fast" src="images/SVG/region-icon-white.svg" alt="region-icon">
+            <span class="animated fadeInUp delay-4 fast">レギオン</span>
           </div>
         </div>
 
         <!-- FIND MORE BUTTON -->
-        <div class="col-auto d-flex justify-content-center my-auto">
-          <div id="scan-button" class="text-center d-flex flex-column button-font position-fixed">
-            <object id="scan-icon" class="icons-large" data="images/SVG/scan-icon.svg" type="image/svg+xml"></object>
-            <span>FIND MORE!</span>
+        <div class="col-auto d-flex justify-content-center">
+          <div id="scan-button" class="text-center d-flex flex-column button-font">
+            <object id="scan-icon" class="icons-large animated fadeInUp delay-3 fast" data="images/SVG/scan-icon.svg" type="image/svg+xml"></object>
+            <span class="animated fadeInUp delay-4 fast">FIND MORE!</span>
           </div>
         </div>
 
         <!-- LOCAL INFO BUTTON -->
         <div class="col-auto p-0 my-auto">
           <div id="local-button" class="tablink text-center d-flex flex-column button-font">
-            <img id="info-icon" class="icons" src="images/SVG/info-icon.svg" alt="local-info-icon">
-            <span>LOCAL INFO</span>
+            <img id="info-icon" class="icons animated fadeInUp delay-3 fast" src="images/SVG/info-icon.svg" alt="local-info-icon">
+            <span id="local-text" class="animated fadeInUp delay-4 fast">現地情報</span>
           </div>
         </div>
       </div>
       <!--Bottom Footer Ends-->
     </div>
   </main>
+
 
   <!--jquery js-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -252,9 +272,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <script src="js/script.js"></script>
-  <script>
-
-  </script>
 
 </body>
 
