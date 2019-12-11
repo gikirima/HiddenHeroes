@@ -11,7 +11,7 @@ $("#hero-info").toggle();
 $("#local-info").toggle();
 //toggle animation class
 $("#local-info").toggleClass("fadeInLeft");
-
+$("body").toggleClass("bg-1 bg-2");
 });
 
 });
