@@ -1607,7 +1607,7 @@
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  -webkit-animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
