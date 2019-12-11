@@ -244,6 +244,10 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 83
  height: 100%;
 }
 
+#local-info{
+  height: 100%;
+}
+
 .heroes-box {
   max-height: 100px;
   width: auto;
