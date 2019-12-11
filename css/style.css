@@ -1,304 +1,122 @@
-@charset "utf-8";
-
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 /* CSS Document */
-:root {
-  --main-color: #EA2027;
-	--main-transparent: #FFD8D9;
-    --transparent: rgba(0, 0, 0, .6);
-  --light: #ffffff;
-  --column-padding: 10px 10px;
-  --screen-color: #8EC3DEa9;
---yellow: #FFC312;
-	--orange : #F79F1F;
+:root{
+	--main-color: #EA2027;
+	--gray: #707070;
+	--light:#fff;
+	--column-padding: 10px 10px;
+	--screen-color: #8EC3DEa9;
 	--dark : #000;
+	--transparent : rgb(0,0,0, 0.9);
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url("../images/Background/Tengah/borobudur.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 66% 0;
-  background-color: var(--screen-color);
-  background-blend-mode: screen;
-  overflow: hidden;
+ul {
+    list-style-type: none;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 
-body {
-  padding: 0;
-  margin: 0;
-}
-
-main {
-  height: 100%;
-}
-
-#header {
-  height: 50px;
-  background-color: var(--gray);
-	overflow: hidden;
-}
-
-#city-name {
-  color: var(--light);
-  font: bolder 0.75em/20px A P-OTF A1Gothic StdN;
-  font-size: 0.75em;
-	position: relative;
-}
-
-
-#city-name::after{
-	position: absolute;
-	content: "Yogyakarta";
-	font-family: "Adobe Handwriting Ernie", sans-serif;
-	font-size: 2.06em;
-	color: #9b9b9b;
-	letter-spacing: -1.05px;
-	top : 15px;
-	left: calc(50% - 63px);
-}
-
-.center-contents {
-  margin: 0;
-  padding: 0;
-  height: calc(100% - 114px);
-  width: 100%;
-  position: relative;
-}
-
-.zoom-button {
-  bottom: 0;
-  left: 0;
-  max-height: 28px;
-}
-
-.zoom-icon {
-	bottom: 0;
-	left: 0;
-  cursor: pointer;
-}
-
-#hero {
-  background-image: url("../images/Character/Tengah/diponegoro-phone-cropped.png");
-  background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.description {
-  position: relative;
-}
-
-.page-font-color {
-  color: var(--light);
-}
-
-
-.handwriting-name {
-  display: inline;
-  color: var(--main-transparent);
-  font-family: adobe-handwriting-ernie, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.81em;
-  text-shadow: 0 0 3px var(--main-color);
-	letter-spacing: -1.05px;
-
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 
 
-.handwriting-name span {
-  font-size: 2.38em;
-	letter-spacing: -1.05px;
-  
-}
-
-
-.text-block {
-  position: relative;
-  top: -50px;
-  left: 0;
-  padding: 10px;
-  background-color: var(--transparent);
-  box-shadow: 0 0 5px 1px;
-  z-index: 10;
-}
-
-#hero-name {
-  font-size: 0.88em;
-  font-weight: 800;
-  font-family: A1ゴシック B;
- letter-spacing: -0.56px;
-	line-height: 21px;
-	margin-bottom: 11px;
-}
-
-.types {
-  margin-bottom: 10px;
-}
-
-.type-list {
-  font-size: 0.75em;
-  letter-spacing: 0px;
-	line-height: 12px;
-}
-
-.weapon-type-container {
-	background-color: var(--gray);
-	border-radius: 9px;
-	height: 16px;
-}
-
-
-.type-container{
-	background-color: var(--orange);
-	border-radius: 9px;
-	height: 16px;
-}
-
-.icon {
-  max-width: 16px;
-  max-height: 16px;
-}
-
-.type-symbol {
-  font-size: 0.63em;
-  font-family: A1ゴシック M;
-	font-weight: 800;
-}
-
-#description-text {
-  font-size: 0.63em;
-  letter-spacing: 0;
-  line-height: 20px;
-	font-family: "A P-OTF A1ゴシック StdN L";
-}
-
-
-#subtext {
-  font-family: A1ゴシック B;
-  font-size: 0.75em;
-  font-weight: 800;
+.lower{
+	background-color: var(--light);
+	height: 50%;
 }
 
 
 
-#heroes-select-container {
-  bottom: 0;
-  left: 0;
-  background: rgb(255,255,255);
-background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF98 9%, #FFFFFFCB 13%, #FFFFFFEA 37%, #FFFFFF 100%);
+
+.inner-container {
+	margin: auto;
+	padding: 0;
 }
 
-.heroes-box {
-  max-height: 100px;
-  width: auto;
-	overflow: hidden;
+.main {
+	height: 100%;
+    width: 100%;
+	background-color: var(--main-color);
+	background-image: url("../images/SVG/indonesia-map.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 33%;
+	z-index: 0;
+
 }
 
-.thumbnail {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 30%;
-  border-radius: 5px;
+.upper {
+	height: 50%;
 }
 
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 64px;
-  width: 100%;
-  color: var(--light);
-  padding: 0.01em 16px;
-  background-color: var(--gray);
-font-family: "A P-OTF A1ゴシック StdN B"
+.site-logo {
+	height: 72px;
+	filter: drop-shadow(0px 0px 6px var(--gray));
+}
+
+.hero1 {
+	color: var(--gray);
+	margin: 0;
+	padding: 0;
+	font-family: A1ゴシック B;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 13px;
+}
+
+.button {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    cursor : pointer;
+}
+
+.scan-button {
+	margin: 15px 0;
+	filter: drop-shadow(0px 0px 4px var(--gray));
+}
+
+
+.logo-container {
+	top: 20%;
+	left: 50%;
+	margin: 0 0 0 -125px;
 }
 
 .button-font {
-  color: var(--light);
-  font-size: 0.63em;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  font-family: A1ゴシック B;
+	color: var(--gray);
+	font-size: 12px;
+	font-family: A1ゴシック B;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+
 }
 
 .icons {
-  height: 32px;
-  margin-bottom: 5px;
+	margin-bottom: 10px;
+	height: 32px;
 }
 
-.icons-large {
-  height: 64px;
-  margin-bottom: 10px;
-}
-
-#scan-button {
-  bottom: 10px;
-}
-
-#scan-button-img {
-  position: fixed;
-  bottom: 32px;
-  left: calc(50% - 32px);
+.container-fluid {
+	max-width: 962px;
 }
 
 
-/*Media Queries*/
-
-
-/*small phones*/
-@media (max-width:320px) {
-	
-	#header{
-		position: fixed;
-		margin-top: -50px;
-		z-index: 10000;
-	}
-	
-	#hero{
-		
-		background-position: 30%;
-	}
-	
-	.zoom-icon{
+@media screen and (orientation: landscape) and (max-width: 896px) {
+	.hide-on-landscape{
 		display: none;
 	}
-	.center-contents{
-		height: auto;
-		margin-top: 50px;
-	}
-	
-	#heroes-select-container .row:nth-child(2){
-		margin-bottom: 64px;
-	}
 }
-
-/*standard Mobile phones*/
-
-@media (min-width: 321px) and (max-width:414px) {
-	.description{
-		margin-top: 10%;
-	}
-	#hero{
-	}
-}
-
-.zoom-container {
-	
-	left: 0;
-	bottom: 0;
-}
-
-
