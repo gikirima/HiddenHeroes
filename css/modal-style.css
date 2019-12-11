@@ -46,24 +46,17 @@
 	margin-bottom: 20px;
 }
 
-
-#help-modal-title {
-	color: var(--light);
-    font-size: 40px;
-	font-family: A1ゴシック B;
-	font-weight: 800;
-	letter-spacing: 6px;
-}
-
-
-
 .modal-backdrop{
 	opacity: 0.9 !important;
 }
 
 
 .modal-title {
+	color: var(--light);
 	font-family: A1ゴシック B;
+	font-size: 2.5rem;
+	font-weight: 800;
+	letter-spacing: 6px;
 }
 
 
@@ -75,11 +68,15 @@
 }
 
 .section {
+	font-family: A1ゴシック B;
+	font-size: 0.875em;
+	font-weight: 800;
 	margin-bottom: 40px;
 }
 
 .help-p {
-	font-size: 13px;
+	font-family: A1ゴシック R;
+	font-size: 0.8125em;
 }
 
 
@@ -103,7 +100,7 @@
 
 .modal-region-header {
 	border: none;
-	padding: 0 1rem 1rem 0;
+	padding: 0 1em 1em 0;
 	display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
@@ -114,10 +111,19 @@
     border-top-right-radius: .3rem;
 }
 
+
+
+/* media queries */
 @media (min-width: 992px) {
     .modal-dialog {
         max-width: 962px !important;
     }
+		.section {
+			font-size: 1em;
+		}
+		.close{
+			font-size : 2em;
+		}
 }
 
 @media (max-width: 320px){

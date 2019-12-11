@@ -11,7 +11,10 @@
 <script type="text/javascript" src="//typesquare.com/accessorself/script/typesquare.js?Xla7CrKjx5s%3D" charset="utf-8"></script>
 <!--Bootstrap CSS-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<!-- animate css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- loader -->
+<link rel="stylesheet" href="css/loader.css">
 <!--Stylesheet-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/modal-style.css">
@@ -19,7 +22,21 @@
 </head>
 
 <body>
-
+  <!-- loader STARTS -->
+  <div id="loader" class="loader">
+    <div class="sk-grid sk-center">
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+    </div>
+  </div>
+  <!-- loader ENDS -->
 
 <!-- overlay STARTS-->
     <div class="modal fade" id="region-modal" tabindex="-1" role="dialog">
@@ -35,14 +52,14 @@
 					<div class="container-fluid menu-container">
 						<div class="row region-menu">
 							<div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-								  <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/PNG/west.png" alt="west"></a>
+								  <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/west.png" alt="west"></a>
 							</div>
 							  	<div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-								 	<a href="heroes.html"><img class="img-fluid overlay-menu" src="images/PNG/center.png" alt="center"></a>
+								 	<a href="heroes.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/center.png" alt="center"></a>
 								</div>
 
 								<div class="col-xs-12 col-md-12 col-lg-4 menus">
-									<a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/PNG/east.png" alt="east"></a>
+									<a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/east.png" alt="east"></a>
 								</div>
 						</div>
 					</div>
@@ -61,7 +78,7 @@
     <div class="modal-content">
         <!--modal-header STARTS-->
       <div class="modal-header">
-        <h5 class="modal-title" id="help-modal-title">遊び方</h5>
+        <h2 class="modal-title" id="help-modal-title">遊び方</h2>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -102,10 +119,10 @@
 
 
 
-<div class="main hide-on-landscape">
+<div class="main hide-on-landscape animated fadeIn fast">
 	<!--upper space-->
-	<div class="upper position-relative"><div class="logo-container position-absolute">
-		<img class="site-logo" src="images/SVG/site-logo-white.svg" alt="site-logo-white">
+	<div class="upper position-relative"><div class="logo-container position-absolute animated fadeInUp delay-1 fast">
+		<object class="site-logo" data="images/SVG/site-logo-white.svg" type="image/svg+xml"></object>
 		</div>
 	</div>
 
@@ -117,15 +134,15 @@
 
 			<div class="row no-gutters justify-content-center">
 				<div class="col-auto text-center">
-					<h1 class="hero1">壁にあるQRコードを見つけて<br>インドネシアの英雄たちを見てみよう</h1><a href="scan.html">
-					<img class="scan-button button" src="images/SVG/scan-button-line.svg" alt="scan-button-line"></a>
+					<h1 class="hero1 animated fadeInUp delay-2 fast">壁にあるQRコードを見つけて<br>インドネシアの英雄たちを見てみよう</h1><a href="scan.html"></a>
+					<object class="scan-button button animated fadeInUp delay-2 fast" data="images/SVG/scan-button-line.svg" type="image/svg+xml"></object>
 				</div>
 			</div>
 			<!--bottom menu-->
 			<div class="row justify-content-around">
 				<div class="col-auto">
 					<div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font text-center button">
-						<img id="region-icon" class="icons" src="images/SVG/region-icon-gray.svg" alt="region-icon-gray"><p>REGION</p>
+						<img id="region-icon" class="icons" src="images/SVG/region-icon-gray.svg" alt="region-icon"><p>REGION</p>
 					</div>
 					</div>
 

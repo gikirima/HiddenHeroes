@@ -19,13 +19,30 @@
   <link href="css/style2.css" rel="stylesheet" type="text/css">
   <!-- animation css -->
   <link rel="stylesheet" href="css/animate.css">
+  <!-- loader css -->
+  <link rel="stylesheet" href="css/loader.css">
   <!-- page style css -->
   <link rel="stylesheet" href="css/modal-style.css" type="text/css">
-
 
 </head>
 
 <body class="bg-1">
+
+  <!-- loader STARTS -->
+  <div id="loader" class="loader">
+    <div class="sk-grid sk-center">
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+    </div>
+  </div>
+  <!-- loader ENDS -->
 
   <!-- overlay STARTS-->
   <div class="modal fade" id="region-modal" tabindex="-1" role="dialog">
@@ -41,14 +58,14 @@
           <div class="container-fluid menu-container">
             <div class="row region-menu">
               <div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-                <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/PNG/west.png" alt="west"></a>
+                <a href="heroes_west.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/west.png" alt="west"></a>
               </div>
               <div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
-                <a href="heroes.html"><img class="img-fluid overlay-menu" src="images/PNG/center.png" alt="center"></a>
+                <a href="heroes.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/center.png" alt="center"></a>
               </div>
 
               <div class="col-xs-12 col-md-12 col-lg-4 menus">
-                <a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/PNG/east.png" alt="east"></a>
+                <a href="heroes_east.html"><img class="img-fluid overlay-menu" src="images/Thumbnail/Menu/east.png" alt="east"></a>
               </div>
             </div>
           </div>
@@ -203,10 +220,10 @@
         </div>
         <!-- select box -->
         <div class="row px-4 pb-5 region-backtext animated fadeInUp delay-2 fast">
-          <div class="col pl-0 heroes-box animated fadeInUp delay-1s fast"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/fatahillah.png" alt="hero1"></div>
-          <div class="col heroes-box animated fadeInUp delay-3 fast"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/kebo-iwa.png" alt="hero2"></div>
-          <div class="col heroes-box animated fadeInUp delay-4 fast"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/apang-semangai.png" alt="hero3"></div>
-          <div class="col pr-0 heroes-box animated fadeInUp delay-5 fast"><img class="thumbnail" src="images/Thumbnail/Character/Center Indonesia/tumenggung-surapati.png" alt="hero4"></div>
+          <div class="col pl-0 heroes-box animated fadeInUp delay-1s fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/fatahillah.png" alt="hero1"></div>
+          <div class="col heroes-box animated fadeInUp delay-3 fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/kebo-iwa.png" alt="hero2"></div>
+          <div class="col heroes-box animated fadeInUp delay-4 fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/apang-semangai.png" alt="hero3"></div>
+          <div class="col pr-0 heroes-box animated fadeInUp delay-5 fast"><img class="thumbnail" src="images/Thumbnail/Character/Tengah/tumenggung-surapati.png" alt="hero4"></div>
         </div>
 
       </div>
@@ -223,7 +240,7 @@
         <div class="col-auto my-auto">
           <div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font d-flex flex-column text-center">
             <img id="region-icon" class="icons animated fadeInUp delay-3 fast" src="images/SVG/region-icon-white.svg" alt="region-icon">
-            <span class="animated fadeInUp delay-4 fast">REGION</span>
+            <span class="animated fadeInUp delay-4 fast">レギオン</span>
           </div>
         </div>
 
@@ -239,13 +256,14 @@
         <div class="col-auto p-0 my-auto">
           <div id="local-button" class="tablink text-center d-flex flex-column button-font">
             <img id="info-icon" class="icons animated fadeInUp delay-3 fast" src="images/SVG/info-icon.svg" alt="local-info-icon">
-            <span class="animated fadeInUp delay-4 fast">LOCAL INFO</span>
+            <span id="local-text" class="animated fadeInUp delay-4 fast">現地情報</span>
           </div>
         </div>
       </div>
       <!--Bottom Footer Ends-->
     </div>
   </main>
+
 
   <!--jquery js-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -254,9 +272,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <script src="js/script.js"></script>
-  <script>
-
-  </script>
 
 </body>
 
