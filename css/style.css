@@ -30,15 +30,10 @@ html,body {
 	                align-items: center;
 }
 
-
-
 .lower{
 	background-color: var(--light);
 	height: 50%;
 }
-
-
-
 
 .inner-container {
 	margin: auto;
