@@ -42,6 +42,8 @@ p{
 
 #hero1{
   margin-bottom: 5px;
+  -webkit-box-pack: stretch;
+          justify-content: stretch;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
