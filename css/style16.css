@@ -30,11 +30,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../images/Background/Tengah/borobudur.png");
+  background-image: url("../images/Background/Timur/puncak-jaya.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: 66% 0;
+  background-position: 70% 20%;
   background-color: var(--screen-color);
   background-blend-mode: screen;
   font-size: 16px;
@@ -44,11 +44,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../images/Background/Tengah/borobudur.png");
+  background-image: url("../images/Background/Timur/puncak-jaya.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: 66% 0;
+  background-position: 70% 20%;
   font-size: 16px;
 }
 
@@ -82,7 +82,7 @@ main {
 #city-name::after {
   display: block;
   position: absolute;
-  content: "Yogyakarta";
+  content: "Lesser\00a0Sunda";
   font-family: adobe-handwriting-ernie, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -90,7 +90,7 @@ main {
   color: #9b9b9b;
   letter-spacing: -1.05px;
   top: 15px;
-  left: calc(50% - 63px);
+  left: calc(50% - 71px);
   z-index: -1;
 }
 
@@ -121,9 +121,10 @@ main {
 }
 
 .hero-img {
-  background-image: url("../images/Character/Tengah/diponegoro-phone-cropped.png");
+  background-image: url("../images/Character/Timur/gurabesi-phone-cropped.png");
   background-repeat: no-repeat;
   background-size: cover;
+	background-position: 30% 0;
 }
 
 .description {
@@ -172,6 +173,10 @@ main {
   font-size: 0.75em;
   letter-spacing: 0px;
   line-height: 12px;
+}
+
+strong{
+font-size: 0.833em;
 }
 
 .weapon-type-container {
@@ -254,7 +259,7 @@ main {
 
 .region-backtext::after {
   display: block;
-  content: "Central Indonesia";
+  content: "East Indonesia";
   position: absolute;
   font-family: adobe-handwriting-ernie, sans-serif;
   font-weight: 400;
@@ -362,6 +367,10 @@ main {
     letter-spacing: -0.48px;
   }
 
+strong{
+	font-size: inherit;
+}
+
   #heroes-select-container .row:nth-child(2) {
     margin-bottom: 64px;
   }
@@ -386,9 +395,9 @@ main {
   }
 
   .hero-img {
-    background-image: url("../images/Character/Tengah/diponegoro-tablet.png");
-    background-size: contain;
-    background-position: 10%;
+    background-image: url("../images/Character/Timur/gurabesi-tablet.png");
+     background-size: contain;
+	  background-position: 20% 0;
   }
 
   #hero-name {
