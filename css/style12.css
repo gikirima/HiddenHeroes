@@ -74,7 +74,8 @@ main {
 
 #city-name {
   color: var(--light);
-  font: bolder 0.75em/20px A P-OTF A1Gothic StdN;
+  font-family: A1ゴシック B;
+line-height: 20px;
   font-size: 0.75em;
   position: relative;
 }
