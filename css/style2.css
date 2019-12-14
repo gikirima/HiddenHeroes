@@ -74,7 +74,7 @@ main {
 
 #city-name {
   color: var(--light);
-  font-family: A1ゴシック B;
+  font-family: 新ゴ B;
   line-height: 20px;
   font-size: 0.75em;
   position: relative;
@@ -201,7 +201,7 @@ main {
   font-size: 0.625em;
   letter-spacing: 0;
   line-height: 20px;
-  font-family: "A P-OTF A1ゴシック StdN L";
+  font-family: 新ゴ L;
 }
 
 #subtext {
@@ -405,6 +405,7 @@ main {
   }
 
   .types {
+    font-family: 新ゴ L;
     margin-bottom: 20px;
   }
 
