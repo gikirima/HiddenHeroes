@@ -121,6 +121,10 @@ main {
   display: flex;
 }
 
+.overlays{
+  mix-blend-mode: overlay;
+}
+
 .hero-img {
   background-image: url("../images/Character/Tengah/kebo-iwa-phone-cropped.png");
   background-repeat: no-repeat;
