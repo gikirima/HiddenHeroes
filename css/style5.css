@@ -121,6 +121,10 @@ main {
   display: flex;
 }
 
+.overlays{
+  mix-blend-mode: overlay;
+}
+
 .hero-img {
   background-image: url("../images/Character/Tengah/apang-semangai-phone-cropped.png");
   background-repeat: no-repeat;
@@ -173,6 +177,11 @@ main {
   font-size: 0.75em;
   letter-spacing: 0px;
   line-height: 12px;
+  font-family: 新ゴ L;
+}
+
+.type-list strong{
+  font-family: 新ゴ M;
 }
 
 .weapon-type-container {
