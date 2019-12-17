@@ -19,6 +19,7 @@ $("#local-info").toggle();
 //toggle animation class
 $("#local-info").toggleClass("fadeInLeft");
 $("body").toggleClass("bg-1 bg-2");
+$("#heroes-select-container").toggleClass("d-none");
 //toggle texts
 $("#local-text").text($("#local-text").text() == 'LOCAL INFO' ? 'HERO INFO' : 'LOCAL INFO');
 

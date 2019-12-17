@@ -15,7 +15,7 @@
   --dark: #000;
 }
 
-#wrap{
+#wrap {
   height: 100%;
 }
 
@@ -75,7 +75,7 @@ main {
 #city-name {
   color: var(--light);
   font-family: 新ゴ B;
-line-height: 20px;
+  line-height: 20px;
   font-size: 0.75em;
   position: relative;
 }
@@ -121,7 +121,7 @@ line-height: 20px;
   display: flex;
 }
 
-.overlays{
+.overlays {
   mix-blend-mode: overlay;
 }
 
@@ -161,22 +161,27 @@ line-height: 20px;
 }
 
 #hero-name {
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 800;
   font-family: A1ゴシック B;
   letter-spacing: -0.56px;
   line-height: 21px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .types {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .type-list {
   font-size: 0.75em;
   letter-spacing: 0px;
   line-height: 12px;
+  font-family: 新ゴ L;
+}
+
+.type-list strong {
+  font-family: 新ゴ M;
 }
 
 .weapon-type-container {
@@ -197,7 +202,7 @@ line-height: 20px;
 
 .type-symbol {
   font-size: 0.625em;
-  font-family: A1ゴシック M;
+  font-family: 新ゴ M;
   font-weight: 800;
 }
 
@@ -209,7 +214,7 @@ line-height: 20px;
 }
 
 #subtext {
-  font-family: A1ゴシック B;
+  font-family: 新ゴ B;
   font-size: 0.75em;
   font-weight: 800;
 }
@@ -230,10 +235,10 @@ line-height: 20px;
   height: 100%;
 }
 
-.orientation-description{
-	color: #a1a1a1;
-	margin-top: 10px;
-	font-size: 0.625em
+.orientation-description {
+  color: #a1a1a1;
+  margin-top: 10px;
+  font-size: 0.625em
 }
 
 .heroes-box {
@@ -377,11 +382,11 @@ line-height: 20px;
   .description {
     margin-top: 10%;
   }
-}
 
-.zoom-container {
-  left: 0;
-  bottom: 0;
+  .px-1 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
 }
 
 /*tablet & desktop*/
@@ -393,7 +398,6 @@ line-height: 20px;
   .hero-img {
     background-image: url("../images/Character/Tengah/tumenggung-surapati-tablet.png");
     background-size: contain;
-
     background-position: 10%;
   }
 
@@ -423,5 +427,4 @@ line-height: 20px;
   .hide-on-landscape {
     display: none;
   }
-
 }
