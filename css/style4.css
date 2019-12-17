@@ -173,6 +173,11 @@ main {
   font-size: 0.75em;
   letter-spacing: 0px;
   line-height: 12px;
+  font-family: 新ゴ L;
+}
+
+.type-list strong{
+  font-family: 新ゴ M;
 }
 
 .weapon-type-container {
@@ -201,11 +206,11 @@ main {
   font-size: 0.625em;
   letter-spacing: 0;
   line-height: 20px;
-  font-family: "A P-OTF A1ゴシック StdN L";
+  font-family: 新ゴ L;
 }
 
 #subtext {
-  font-family: A1ゴシック B;
+  font-family: 新ゴ B;
   font-size: 0.75em;
   font-weight: 800;
 }
