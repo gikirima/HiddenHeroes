@@ -15,7 +15,7 @@
   --dark: #000;
 }
 
-#wrap{
+#wrap {
   height: 100%;
 }
 
@@ -75,7 +75,7 @@ main {
 #city-name {
   color: var(--light);
   font-family: 新ゴ B;
-line-height: 20px;
+  line-height: 20px;
   font-size: 0.75em;
   position: relative;
 }
@@ -121,7 +121,7 @@ line-height: 20px;
   display: flex;
 }
 
-.overlays{
+.overlays {
   mix-blend-mode: overlay;
 }
 
@@ -129,7 +129,7 @@ line-height: 20px;
   background-image: url("../images/Character/Timur/ukung-tewu-phone-cropped.png");
   background-repeat: no-repeat;
   background-size: cover;
-	background-position: 30% 0;
+  background-position: 30% 0;
 }
 
 .description {
@@ -162,26 +162,28 @@ line-height: 20px;
 }
 
 #hero-name {
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 800;
   font-family: A1ゴシック B;
   letter-spacing: -0.56px;
   line-height: 21px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .types {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .type-list {
   font-size: 0.75em;
   letter-spacing: 0px;
   line-height: 12px;
+  font-family: 新ゴ L;
 }
 
-strong{
-	font-size: inherit;
+strong {
+  font-family: 新ゴ M;
+  font-size: inherit;
 }
 
 .weapon-type-container {
@@ -202,7 +204,7 @@ strong{
 
 .type-symbol {
   font-size: 0.625em;
-  font-family: A1ゴシック M;
+  font-family: 新ゴ M;
   font-weight: 800;
 }
 
@@ -214,7 +216,7 @@ strong{
 }
 
 #subtext {
-  font-family: A1ゴシック B;
+  font-family: 新ゴ B;
   font-size: 0.75em;
   font-weight: 800;
 }
@@ -235,10 +237,10 @@ strong{
   height: 100%;
 }
 
-.orientation-description{
-	color: #a1a1a1;
-	margin-top: 10px;
-	font-size: 0.625em
+.orientation-description {
+  color: #a1a1a1;
+  margin-top: 10px;
+  font-size: 0.625em
 }
 
 .heroes-box {
@@ -382,11 +384,11 @@ strong{
   .description {
     margin-top: 10%;
   }
-}
 
-.zoom-container {
-  left: 0;
-  bottom: 0;
+  .px-1 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
 }
 
 /*tablet & desktop*/
@@ -397,8 +399,8 @@ strong{
 
   .hero-img {
     background-image: url("../images/Character/Timur/ukung-tewu-tablet.png");
-     background-size: cover;
-	  background-position: 35% 0;
+    background-size: cover;
+    background-position: 35% 0;
   }
 
   #hero-name {
@@ -427,5 +429,4 @@ strong{
   .hide-on-landscape {
     display: none;
   }
-
 }
