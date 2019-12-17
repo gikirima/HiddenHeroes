@@ -121,6 +121,10 @@ line-height: 20px;
   display: flex;
 }
 
+.overlays{
+  mix-blend-mode: overlay;
+}
+
 .hero-img {
   background-image: url("../images/Character/Barat/sisingamangaraja-phone-cropped.png");
   background-repeat: no-repeat;

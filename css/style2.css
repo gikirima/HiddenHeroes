@@ -121,6 +121,10 @@ main {
   display: flex;
 }
 
+.overlays{
+  mix-blend-mode: overlay;
+}
+
 .hero-img {
   background-image: url("../images/Character/Tengah/diponegoro-phone-cropped.png");
   background-repeat: no-repeat;
@@ -157,7 +161,7 @@ main {
 }
 
 #hero-name {
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 800;
   font-family: A1ゴシック B;
   letter-spacing: -0.56px;
@@ -173,6 +177,11 @@ main {
   font-size: 0.75em;
   letter-spacing: 0px;
   line-height: 12px;
+  font-family: 新ゴ L;
+}
+
+.type-list strong{
+  font-family: 新ゴ M;
 }
 
 .weapon-type-container {
@@ -193,19 +202,19 @@ main {
 
 .type-symbol {
   font-size: 0.625em;
-  font-family: A1ゴシック M;
+  font-family: 新ゴ M;
   font-weight: 800;
 }
 
 #description-text {
-  font-size: 0.625em;
+  font-size: 0.75em;
   letter-spacing: 0;
   line-height: 20px;
   font-family: 新ゴ L;
 }
 
 #subtext {
-  font-family: A1ゴシック B;
+  font-family: 新ゴ B;
   font-size: 0.75em;
   font-weight: 800;
 }
