@@ -20,7 +20,7 @@ $("#local-info").toggle();
 $("#local-info").toggleClass("fadeInLeft");
 $("body").toggleClass("bg-1 bg-2");
 //toggle texts
-$("#local-text").text($("#local-text").text() == '現地情報' ? 'ヒーロー情報' : '現地情報');
+$("#local-text").text($("#local-text").text() == 'LOCAL INFO' ? 'HERO INFO' : 'LOCAL INFO');
 
 });
 
