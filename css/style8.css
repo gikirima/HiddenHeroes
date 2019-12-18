@@ -5,7 +5,7 @@
 :root {
   --main-color: #EA2027;
   --main-transparent: #FFD8D9;
-  --transparent: rgba(0, 0, 0, .6);
+  --transparent: rgba(0, 0, 0, .8);
   --light: #ffffff;
   --column-padding: 10px 10px;
   --screen-color: #8EC3DECC;
