@@ -37,7 +37,8 @@ p{
 }
 
 .flex-1{
-  flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
   margin: 50px 0;
 }
 
