@@ -5,50 +5,36 @@ $(document).ready(function(){
 // check on ukung tewu
 var ukung =  Cookies.get("ukung");
 if(ukung){
-
-}
-else{
-  $("#hero1img").unwrap();
-  $("#hero1img").attr("src","images/Thumbnail/Menu/lock.png")
+  $("#hero1img").wrap("<a href='east/ukung-tewu.html'></a>");
+  $("#hero1img").attr("src","images/Thumbnail/Character/Timur/ukung-tewu.png");
 }
 
 // check on hasanuddin
 var hasanuddin =  Cookies.get("hasanuddin");
 if(hasanuddin){
-
-}
-else{
-  $("#hero2img").unwrap();
-  $("#hero2img").attr("src","images/Thumbnail/Menu/lock.png")
+  $("#hero2img").wrap("<a href='east/hasanuddin.html'></a>");
+  $("#hero2img").attr("src","images/Thumbnail/Character/Timur/hasanuddin.png");
 }
 
 // check on pattimura
 var pattimura =  Cookies.get("pattimura");
 if(pattimura){
+  $("#hero3img").wrap("<a href='east/pattimura.html'></a>");
+  $("#hero3img").attr("src","images/Thumbnail/Character/Timur/pattimura.png");
+}
 
-}
-else{
-  $("#hero3img").unwrap();
-  $("#hero3img").attr("src","images/Thumbnail/Menu/lock.png")
-}
 // check on wona kaka
 var wonakaka =  Cookies.get("wonakaka");
 if(wonakaka){
-
-}
-else{
-  $("#hero4img").unwrap();
-  $("#hero4img").attr("src","images/Thumbnail/Menu/lock.png")
+  $("#hero4img").wrap("<a href='east/wona-kaka.html'></a>");
+  $("#hero4img").attr("src","images/Thumbnail/Character/Timur/wona-kaka.png");
 }
 
 // check on gurabesi
 var gurabesi =  Cookies.get("gurabesi");
 if(gurabesi){
-
-}
-else{
-  $("#hero5img").unwrap();
-  $("#hero5img").attr("src","images/Thumbnail/Menu/lock.png")
+  $("#hero5img").wrap("<a href='east/gurabesi.html'></a>");
+  $("#hero5img").attr("src","images/Thumbnail/Character/Timur/gurabesi.png");
 }
 // check o EAST ENDS
 });

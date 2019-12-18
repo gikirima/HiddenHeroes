@@ -1,6 +1,6 @@
 /* CSS Document */
 
-body,html{
+body,html, .hide-on-landscape{
   width: 100%;
   height: 100%;
   font-size: 16px;
@@ -32,12 +32,13 @@ p{
   overflow: hidden;
 }
 
-.upper-container{
-  margin: 50px 0;
-}
-
 .thumbnail-border{
   border-radius: 10px;
+}
+
+.flex-1{
+  flex: 1;
+  margin: 50px 0;
 }
 
 #hero1{
@@ -72,7 +73,8 @@ p{
 }
 
 .lower-font{
-  max-height: 322px;
+  max-height: 209px;
+  min-height: 97px;
 }
 
 .redline{
@@ -144,6 +146,16 @@ p{
     padding-right: 30px;
   }
 }
+
+/* iPad landscape mode */
+@media (min-width: 992px){
+.container {
+    max-width: 922px;
+}
+.svg{
+  height: 100%;
+}
+}
 @media (min-width: 1200px){
   .container{
     max-width: 960px !important;
@@ -152,8 +164,15 @@ p{
     max-width: 960px !important;
   }
 
-  object{
-    height: 100%;
-  }
+}
 
+@media only screen and (orientation: landscape) and (max-width: 896px) {
+  .hide-on-landscape {
+    position: relative;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: var(--transparent);
+    display: none;
+  }
 }
