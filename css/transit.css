@@ -25,12 +25,11 @@ p{
 #home{
 	position: absolute;
 	left: 0px;
-}
-
-#home img{
-	width: 32px;
+	
+	width: 27px;
 	height: 32px;
 }
+
 
 .text1{
   font-size: 0.875em;
