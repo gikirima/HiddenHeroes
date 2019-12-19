@@ -25,9 +25,10 @@ p{
 #home{
 	position: absolute;
 	left: 0px;
-	
+	top: 9px;
 	width: 27px;
 	height: 32px;
+	z-index: 100;
 }
 
 
