@@ -119,10 +119,7 @@ font-size: 0.75em;
 
   <script type="text/javascript">
     function onQRCodeScanned(scannedText) {
-      var scannedTextMemo = document.getElementById("scannedTextMemo")
-      if(scannedTextMemo){
-        scannedTextMemo.value = scannedText;
-      }
+      
       var pagelink = document.getElementById("pagelink");
       if (pagelink) {
         pagelink.setAttribute("href", scannedText);
