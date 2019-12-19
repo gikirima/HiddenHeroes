@@ -125,7 +125,7 @@
       //the scanner succesfully scan a QR code
       var jbScanner = new JsQRScanner(onQRCodeScanned);
       //reduce the size of analyzed images to increase performance on mobile devices
-      jbScanner.setSnapImageMaxSize(600);
+      jbScanner.setSnapImageMaxSize(300);
       var scannerParentElement = document.getElementById("scanner");
       if (scannerParentElement) {
         //append the jbScanner to an existing DOM element
