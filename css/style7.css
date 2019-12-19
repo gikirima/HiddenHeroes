@@ -6,13 +6,15 @@
   --main-color: #EA2027;
   --main-transparent: #FFD8D9;
   --transparent: rgba(0, 0, 0, .8);
-  --light: #ffffff;
+  --light: #E7E9E3;
   --column-padding: 10px 10px;
   --screen-color: #8EC3DECC;
   --yellow: #FFC312;
   --orange: #F79F1F;
   --blue: #0652DD;
-  --dark: #333;
+  --dark: #232733;
+  --dark2: #2B3344;
+  --gray: #636A72;
 }
 
 #wrap {
@@ -68,7 +70,7 @@ main {
 
 #header {
   height: 50px;
-  background-color: var(--dark);
+  background-color: var(--gray);
   overflow: hidden;
 }
 
@@ -282,7 +284,7 @@ main {
   bottom: 0;
   height: 64px;
   width: 100%;
-  background-color: var(--dark);
+  background-color: var(--gray);
   z-index: 10;
 }
 

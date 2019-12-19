@@ -1,11 +1,12 @@
 /* CSS Document */
 :root{
 	--main-color: #EA2027;
-	--gray: #707070;
-	--light:#fff;
+	--gray: #636A72;
+	--light: #fff;
 	--column-padding: 10px 10px;
 	--screen-color: #8EC3DEa9;
-	--dark : #000;
+	--dark : #232733;
+	--dark2 : #2B3344;
 	--transparent : rgb(0,0,0, 0.9);
 }
 
