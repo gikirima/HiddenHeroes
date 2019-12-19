@@ -12,7 +12,7 @@
   --yellow: #FFC312;
   --orange: #F79F1F;
   --blue: #0652DD;
-  --dark: #000;
+  --dark: #333;
 }
 
 #wrap {
@@ -68,7 +68,7 @@ main {
 
 #header {
   height: 50px;
-  background-color: var(--gray);
+  background-color: var(--dark);
   overflow: hidden;
 }
 
@@ -282,7 +282,7 @@ main {
   bottom: 0;
   height: 64px;
   width: 100%;
-  background-color: var(--gray);
+  background-color: var(--dark);
   z-index: 10;
 }
 
