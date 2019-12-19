@@ -6,45 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <style>
-    html, body{
+    html,
+    body {
       height: 100%;
       width: 100%;
       margin: 0;
       padding: 0;
     }
+
     #header {
       height: 6rem;
       background-color: #000;
     }
 
-    .circle{
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-      border-width: 5px;
-      border-style: solid;
-      border-color: rgba(255, 255, 255, 0.5);
+    #header span {
+      font-family: A1ゴシック B;
+      font-size: 0.75em;
     }
-
-#header span{
-font-family: A1ゴシック B;
-font-size: 0.75em;
-}
 
     .center {
       height: calc(100% - 14rem);
       background-color: black;
     }
 
-#footer{
+    #footer {
       height: 8rem;
       background-color: #000;
     }
-#footer span{
-  font-family: A1ゴシック B;
-  font-size: 0.75em;
-}
-    .button{
+
+    #footer span {
+      font-family: A1ゴシック B;
+      font-size: 0.75em;
+    }
+
+    .button {
       display: block;
       width: 64px !important;
       height: 64px;
@@ -95,14 +90,14 @@ font-size: 0.75em;
   <div class="center d-flex align-items-center justify-content-center overflow-hidden">
     <div id="scanner" class="text-center"></div>
   </div>
-<!-- footer -->
+  <!-- footer -->
   <div id="footer" class="d-flex align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-12 justify-content-center text-center">
 
-            <a href="#" id="pagelink" class="button"></a>
-            <span class="text-light">GO TO HERO PAGE</span>
+          <a href="#" id="pagelink" class="button"></a>
+          <span class="text-light">GO TO HERO PAGE</span>
         </div>
       </div>
     </div>
@@ -130,7 +125,7 @@ font-size: 0.75em;
       //the scanner succesfully scan a QR code
       var jbScanner = new JsQRScanner(onQRCodeScanned);
       //reduce the size of analyzed images to increase performance on mobile devices
-      jbScanner.setSnapImageMaxSize(300);
+      jbScanner.setSnapImageMaxSize(600);
       var scannerParentElement = document.getElementById("scanner");
       if (scannerParentElement) {
         //append the jbScanner to an existing DOM element
@@ -138,15 +133,15 @@ font-size: 0.75em;
       }
     }
   </script>
-<script type="text/javascript">
-  $(document).ready(function(){
-  $(function(){
-		$("#loader").fadeOut(600, function(){
-			$("#loader").remove();
-		});
-	});
-  });
-</script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(function() {
+        $("#loader").fadeOut(600, function() {
+          $("#loader").remove();
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
