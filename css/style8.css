@@ -6,13 +6,15 @@
   --main-color: #EA2027;
   --main-transparent: #FFD8D9;
   --transparent: rgba(0, 0, 0, .8);
-  --light: #ffffff;
+  --light: #fff;
   --column-padding: 10px 10px;
   --screen-color: #8EC3DECC;
   --yellow: #FFC312;
   --orange: #F79F1F;
   --blue: #0652DD;
-  --dark: #000;
+  --dark: #232733;
+  --dark2: #2B3344;
+  --gray: #636A72;
 }
 
 #wrap {
@@ -88,7 +90,7 @@ main {
   font-weight: 400;
   font-style: normal;
   font-size: 2.06em;
-  color: #9b9b9b;
+  color: #878c90;
   letter-spacing: -1.05px;
   top: 15px;
   left: calc(50% - 62px);
@@ -119,10 +121,6 @@ main {
 .zoom-col {
   display: -webkit-box;
   display: flex;
-}
-
-.overlays {
-  mix-blend-mode: overlay;
 }
 
 .hero-img {
@@ -217,6 +215,7 @@ main {
   font-family: 新ゴ B;
   font-size: 0.75em;
   font-weight: 800;
+  color: var(--dark2);
 }
 
 #heroes-select-container {
