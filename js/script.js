@@ -5,7 +5,8 @@
 $(document).ready(function(){
 //loader function
 	$(function(){
-		$("#loader").fadeOut(600, function(){
+		$("#loader").delay(600).fadeOut(600, function(){
+			$("main").removeClass("d-none");
 			$("#loader").remove();
 		});
 	});
