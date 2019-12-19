@@ -103,8 +103,6 @@ font-size: 0.75em;
 
             <a href="#" id="pagelink" class="button"></a>
             <span class="text-light">GO TO HERO PAGE</span><span id="texcode"></span>
-            <textarea id="scannedTextMemo">
-            </textarea>
         </div>
       </div>
     </div>
@@ -119,7 +117,7 @@ font-size: 0.75em;
 
   <script type="text/javascript">
     function onQRCodeScanned(scannedText) {
-      
+
       var pagelink = document.getElementById("pagelink");
       if (pagelink) {
         pagelink.setAttribute("href", scannedText);
