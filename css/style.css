@@ -1,11 +1,12 @@
 /* CSS Document */
 :root{
 	--main-color: #EA2027;
-	--gray: #707070;
-	--light:#fff;
+	--gray: #636A72;
+	--light: #fff;
 	--column-padding: 10px 10px;
 	--screen-color: #8EC3DEa9;
-	--dark : #000;
+	--dark : #232733;
+	--dark2 : #2B3344;
 	--transparent : rgb(0,0,0, 0.9);
 }
 
@@ -17,6 +18,7 @@ html,body {
     padding: 0;
     margin: 0;
     height: 100%;
+		font-size: 16px;
 }
 
 
@@ -29,15 +31,10 @@ html,body {
 	                align-items: center;
 }
 
-
-
 .lower{
 	background-color: var(--light);
 	height: 50%;
 }
-
-
-
 
 .inner-container {
 	margin: auto;
@@ -73,7 +70,7 @@ html,body {
 	font-family: A1ゴシック B;
 	font-weight: bold;
 	line-height: 20px;
-	font-size: 13px;
+	font-size: 0.875em;
 }
 
 .button {
@@ -96,7 +93,7 @@ html,body {
 
 .button-font {
 	color: var(--gray);
-	font-size: 12px;
+	font-size: 0.75em;
 	font-family: A1ゴシック B;
 	font-weight: bold;
 	letter-spacing: 0.05em;
@@ -112,6 +109,38 @@ html,body {
 	max-width: 962px;
 }
 
+
+.delay-1 {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 1800ms;
+  animation-delay: 1800ms;
+}
+
+
+@media (max-width: 320px) {
+	.hero1{
+		font-size: 0.75em;
+	}
+}
 
 @media screen and (orientation: landscape) and (max-width: 896px) {
 	.hide-on-landscape{

@@ -1,7 +1,15 @@
 // JavaScript Document
 
+
 //make sure that all document is loaded first before applying js
 $(document).ready(function(){
+//loader function
+	$(function(){
+		$("#loader").fadeOut(600, function(){
+			$("#loader").remove();
+		});
+	});
+
 
 $("#local-button").click(function(){
 // toggle heroImage
@@ -12,6 +20,12 @@ $("#local-info").toggle();
 //toggle animation class
 $("#local-info").toggleClass("fadeInLeft");
 $("body").toggleClass("bg-1 bg-2");
+$("#heroes-select-container").toggleClass("d-none");
+//toggle texts
+$("#local-text").text($("#local-text").text() == 'LOCAL INFO' ? 'HERO INFO' : 'LOCAL INFO');
+
 });
+
+
 
 });
