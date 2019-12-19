@@ -21,6 +21,18 @@ p{
   height: 50px;
   width: 100%;
 }
+
+#home{
+	position: absolute;
+	left: 0px;
+	
+}
+
+#home img{
+	width: 32px;
+	height: 32px;
+}
+
 .text1{
   font-size: 0.875em;
   font-family: A1ゴシック B;
@@ -146,6 +158,9 @@ p{
     padding-left: 30px;
     padding-right: 30px;
   }
+	#home{
+		left: 30px;
+	}
 }
 
 /* iPad landscape mode */
