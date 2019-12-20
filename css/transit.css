@@ -29,6 +29,12 @@ p {
   width: 25px;
   height: 30px;
   z-index: 100;
+  font-family: A1ゴシック B;
+  font-size: 0.8em;
+  color: var(--light);
+}
+#home img{
+  margin-bottom: 5px;
 }
 .text1 {
   font-size: 0.875em;
@@ -155,7 +161,7 @@ p {
 	.thumbnail-border {
   border-radius: 25px;
 }
-	
+
 }
 
 @media (min-width: 1200px) {
